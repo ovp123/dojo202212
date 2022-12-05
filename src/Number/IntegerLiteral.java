@@ -2,7 +2,7 @@ package Number;
 
 public class IntegerLiteral {
     public static void main(String[] args) {
-
+        System.out.println(-Byte.MIN_VALUE == Byte.MIN_VALUE);
         System.out.println(-Integer.MIN_VALUE);                       // => -2147483648
         System.out.println(Integer.MIN_VALUE == -Integer.MIN_VALUE);  // => true
         System.out.println(Math.abs(Integer.MIN_VALUE) >= 0);         // => false
@@ -12,7 +12,7 @@ public class IntegerLiteral {
         representationPrimitive();
         underscore();
         callMethod();
-//        comportementLimite();
+        comportementLimite();
     }
 
     static void baseLiterals(){
@@ -63,10 +63,10 @@ public class IntegerLiteral {
     }
 
     static void comportementLimite(){
-        System.out.println((byte)(Byte.MAX_VALUE + 1));       // => -128
-        System.out.println((short)(Short.MAX_VALUE + 1));     // => -32_768
-        System.out.println((short)(Character.MAX_VALUE + 1)); // => 0
-        System.out.println((int)(Integer.MAX_VALUE + 1));     // => -2_147_483_648
+        System.out.println((byte)(Byte.MAX_VALUE + 1));       // +127           => -128
+        System.out.println((short)(Short.MAX_VALUE + 1));     // +32_767        => -32_768
+        System.out.println((short)(Character.MAX_VALUE + 1)); // +65_565        => 0
+        System.out.println((int)(Integer.MAX_VALUE + 1));     // +2_147_483_647 => -2__147_483_648
         System.out.println((long)(Long.MAX_VALUE + 1));       // => -9__223_372_036__854_775_808
 
         System.out.println(-Byte.MIN_VALUE);

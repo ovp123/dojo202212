@@ -23,6 +23,11 @@ public class Precision {
         System.out.println(var);
         System.out.println(var + 0.0f);
         System.out.println((long)(var + 0.0f) - var);    // => perte de précision
-
+        float f = 1.23f;
+        System.out.println(f);
+        System.out.println((double)f);
+        System.out.println((float)(double)f);
+        System.out.println(Integer.toHexString((int)Double.POSITIVE_INFINITY));
+        System.out.println((byte)((int)Double.POSITIVE_INFINITY));
     }
 }
