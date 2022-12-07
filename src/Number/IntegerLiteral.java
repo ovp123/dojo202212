@@ -1,7 +1,13 @@
 package Number;
 
+import javax.imageio.ImageWriteParam;
+
 public class IntegerLiteral {
     public static void main(String[] args) {
+        System.out.println(Integer.toHexString(0));                // => 00000000
+        System.out.println(Integer.toHexString(Integer.MAX_VALUE));   // => 7fffffff
+        System.out.println(Integer.toHexString(Integer.MIN_VALUE));   // => 80000000
+        System.out.println(Integer.toHexString(-1));               // => ffffffff
         System.out.println(-Byte.MIN_VALUE == Byte.MIN_VALUE);
         System.out.println(-Integer.MIN_VALUE);                       // => -2147483648
         System.out.println(Integer.MIN_VALUE == -Integer.MIN_VALUE);  // => true

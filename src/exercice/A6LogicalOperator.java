@@ -16,12 +16,16 @@ public class A6LogicalOperator {
         );
     }
 
-    private static String whatToDoToday(int wind, boolean isGoodWeather, boolean isThereANewStarWars) {
-        if (isGoodWeather & wind < 30 ^ isThereANewStarWars){
-            return "go Paragliding";
-        } else {
-            return "go to cinema";
-        }
+    private static String whatToDoToday(int budget, boolean price, boolean isThereANewStarWars) {
+//        if (isGoodWeather & wind < 30 ^ isThereANewStarWars){
+//            return "go Paragliding";
+//        } else {
+//            return "go to cinema";
+//        }
+//        if (isEnoughMoney() ^ isRaining){
+//
+//        }
+        return "";
     }
 
     @Test

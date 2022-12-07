@@ -2,6 +2,7 @@ package exercice;
 
 public class A1IntegerEx {
     public static void main(String[] args) {
+        System.out.println((byte)(Byte.MAX_VALUE+ 1));
 //        System.out.println((byte)(Byte.MAX_VALUE + 1));
 //        System.out.println((short)(Short.MAX_VALUE + 1));
 //        System.out.println((short)(Character.MAX_VALUE + 1));
